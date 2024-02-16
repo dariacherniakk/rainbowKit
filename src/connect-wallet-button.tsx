@@ -11,5 +11,5 @@ export const ConnectWalletButton = () => {
         window.onWalletConnected(address)
     },[address])
 
-    return <ConnectButton/>
+    return <ConnectButton chainStatus="none" showBalance= {false}/>
 }
