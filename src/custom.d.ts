@@ -1,9 +1,10 @@
 /// <reference types="vite/client" />
 
-export {}
+export {};
 
 declare global {
   interface Window {
-    onWalletConnected: (address: string) => void
+    onWalletConnected: (address: string) => void;
+    onWalletDisconnect: () => void;
   }
 }

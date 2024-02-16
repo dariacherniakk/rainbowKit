@@ -20,11 +20,29 @@ import {
     QueryClient,
 } from "@tanstack/react-query";
 import {ConnectWalletButton} from "./connect-wallet-button.tsx";
+import {
+  rainbowWallet,
+  walletConnectWallet,
+  metaMaskWallet,
+  okxWallet,
+  trustWallet,
+  phantomWallet
+} from '@rainbow-me/rainbowkit/wallets';
 
 const config = getDefaultConfig({
-    appName: 'Walkin events',
+    appName: 'Walkin\'',
     projectId: '197eb2a0941623002df6b35bce91e2c4',
     chains: [mainnet, polygon, optimism, arbitrum, base],
+    wallets: [
+        {
+          groupName: 'Recommended',
+          wallets: [rainbowWallet],
+        },
+          {
+            groupName: 'Others',
+            wallets: [walletConnectWallet, metaMaskWallet, okxWallet, trustWallet, phantomWallet],
+          },
+      ],
     ssr: false
 });
 
