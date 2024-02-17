@@ -5,5 +5,6 @@ export {}
 declare global {
   interface Window {
     onWalletConnected: (address: string) => void
+    onWalletDisconnected: () => void
   }
 }
