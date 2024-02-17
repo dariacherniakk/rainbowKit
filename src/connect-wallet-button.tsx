@@ -21,5 +21,5 @@ export const ConnectWalletButton = () => {
         }
     }, [status]);
 
-    return <ConnectButton/>
+    return <ConnectButton chainStatus="none" showBalance= {false}/>
 }
