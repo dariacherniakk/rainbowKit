@@ -5,7 +5,7 @@ import '@rainbow-me/rainbowkit/styles.css';
 import {
     getDefaultConfig,
     RainbowKitProvider,
-    midnightTheme
+    darkTheme
 } from '@rainbow-me/rainbowkit';
 import {  WagmiProvider } from 'wagmi';
 import {
@@ -52,12 +52,12 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
       <WagmiProvider config={config}>
           <QueryClientProvider client={queryClient}>
-              <RainbowKitProvider theme={midnightTheme({
-                        accentColor: '#fff500',
-                        accentColorForeground: 'black',
-                        borderRadius: 'large',
-                        fontStack: 'rounded',
-                        overlayBlur: 'none',
+              <RainbowKitProvider theme={darkTheme({
+                        accentColor: '#000000',
+                        accentColorForeground: 'white',
+                        borderRadius: 'medium',
+                        fontStack: 'system',
+                        overlayBlur: 'none'
                     })}>
                   <ConnectWalletButton/>
               </RainbowKitProvider>
