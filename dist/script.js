@@ -2,7 +2,7 @@
 var scriptElement = document.createElement("script");
 scriptElement.type = "module";
 // scriptElement.crossOrigin = true;
-scriptElement.src = "https://dariacherniakk.github.io/rainbowKit/dist/assets/index-DQT_xuLh.js";
+scriptElement.src = "https://dariacherniakk.github.io/rainbowKit/dist/assets/index-DupJ1iX6.js";
 
 // Create a new link element for CSS
 var linkElement = document.createElement("link");
